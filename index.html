@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"   href="img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Apollo Coding Challenge</title>
+</head>
+
+<body class="Apollo-Coding-Challenge">
+
+    <section class="mask">
+
+        <div class="empty">
+            <div class="circle"></div>
+            <div id="lg-1" class="line-green"></div>
+            <div id="line"></div>
+            <div id='cg-1' class="circle">2</div>
+            <div id="lg-2" class="line-green"></div>
+            <div id="lineb"></div>
+            <div id='cg-2' class="circle">3</div>
+        </div>
+        <section class="content-data">
+            <h1>Apollo Coding Challenge</h1>
+            <form action="">
+                <!-- chose sending method -->
+                <section class="consent">
+                    <h2 class="title tit-1">Update Response</h2>
+                    <input type="radio" name="consent" id="give-consent" value="I give my consent">
+                    <label for="give-consent">I give my consent</label>
+                    <input type="radio" name="consent" id="not-consent" value="I do not give my consent">
+                    <label for="not-consent">I no not give my consent</label>
+                </section>
+                <section class="message">
+                    <h2 id="tit-2" class="title">Select method</h2>
+                    <input type="radio" name="sendmethod" id="text" value="Text message (SMS)">
+                    <label for="text">Text message (SMS)</label>
+                    <label for="text">*** *** 3456</label>
+                    <input type="radio" name="sendmethod" id="voice" value="Voice mail">
+                    <label for="voice">Voice call</label>
+                    <label for="voice">*** *** 3456</label>
+                    <input type="radio" name="sendmethod" id="mail" value="Email">
+                    <label for="mail">Email</label>
+                    <label for="mail">f*****@iqvia.com</label>
+                    <input type="submit" value="Send code">
+                </section>
+
+            </form>
+            <form action="">
+                <!-- chose sending method -->
+                <section id="code" class="code">
+                    <h2 class="title tit-3">Enter code</h2>
+                    <p><span id="msg"></span>
+                    <p>Please check your device to obtain the validation</p>
+                        <p>code.</p>
+                    <p id="code12"></p>
+                    <input  id="inputCodetxt" type="text" autocomplete="off" onkeypress="inputTxt(event)" placeholder="Code">
+                    <a id="inputResend" href="#">Resend code</a> <!-- Send @param to backend -->
+                    <input type="submit" value="Verify">
+
+                </section>
+            </form>
+
+        </section>
+
+    </section>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

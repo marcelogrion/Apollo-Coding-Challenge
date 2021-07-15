@@ -1,0 +1,262 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+  font-family: ProximaNova, sans-serif;
+  /* I don't have this Font */
+  color: #999999;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  display: none;
+}
+
+/* Body */
+
+.Apollo-Coding-Challenge {
+  display: flex;
+  height: 1024px;
+}
+
+.mask {
+  display: flex;
+  gap: 10px;
+  width: 400px;
+  height: 728px;
+  margin: auto;
+  padding: 24px 24px 32px;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px #e9e9e9;
+  background-color: #ffffff;
+}
+
+/*comienza form*/
+
+/* cominza consent */
+
+.title {
+  width: 312px;
+  height: 24px;
+  margin: 0 0 4px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.tit-1 {
+  color: #595959;
+}
+
+.consent {
+  display: grid;
+  grid-template-columns: 40px auto;
+  margin-top: 6px;
+}
+
+.consent h2 {
+  grid-column: 1/3;
+  margin-bottom: 16px;
+}
+
+.consent input, .message input {
+  margin-left: 15px;
+}
+
+/* termina consent */
+
+label {
+  margin: 0 0 0 4px;
+  padding: 4px 0 4px 0;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+input[type='radio'] {
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+  border-radius: 8px;
+  border: solid 1px #0768fd;
+  background-color: #ffffff;
+}
+
+input[type='radio']:checked+label {
+  color: #595959;
+}
+
+/* comienza message */
+
+.message {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr;
+  margin-top: 54px;
+}
+
+.message h2 {
+  grid-column: 1/4;
+  margin-bottom: 16px;
+}
+
+.message input[type='submit'] {
+  grid-column: 1/3;
+  width: 110px;
+  height: 40px;
+  margin: 16px 202px 0 4px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: #0768fd;
+  opacity: 0.4;
+  color: white;
+  margin-left: 15px;
+  font-size: 14px;
+  transition: 300ms;
+}
+.message input[type='submit']:hover {
+  cursor: pointer; 
+  background-color: #0769fdc5;
+  transition: 0ms;
+}
+
+.code12-box {
+  height: 20px;
+}
+.code12 {
+  margin: 20px 0 0 15px;
+  color: #595959;
+}
+
+#msg, #msgsms{
+  color: #595959;
+}
+
+/* termina message */
+
+/*Termina form*/
+
+/* comienza code */
+
+.code {
+  margin: 50px 0 16px;
+}
+
+.code p {
+  line-height: 1.85;
+  margin: 0 16px 0 16px;
+  letter-spacing: normal;
+  font-size: 13px;
+}
+
+.code a {
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 16px;
+  color: #0768fd;
+  text-decoration: none;
+}
+
+/*input code field*/
+.code input[type='text'] {
+  width: 272px;
+  height: 40px;
+  margin: 8px 0 16px 16px;
+  padding: 8px;
+  border-radius: 4px;
+  border: solid 1px #d9d9d9;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.code input[type='submit'] {
+  width: 352px;
+  height: 40px;
+  left: -46px;
+  top: 46px;
+  position: relative;
+  padding: 8px 16px;
+  opacity: 0.4;
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: #0768fd;
+  color: white;
+}
+.code input[type='submit']:hover {
+  cursor: pointer; 
+  background-color: #0769fdc5;
+}
+.code a:hover { 
+  cursor: pointer; 
+}
+.code input:focus {
+  background: #00c2203f;
+  color: #595959;
+}
+
+/* termina code */
+
+/* start green line */
+
+.circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 0 16px 8px 0;
+  padding: 2px 7px;
+  background-color: #b5b5b5;
+  color: white;
+}
+
+.circle:nth-of-type(1) {
+  background-image: url("../img/garrapata.svg");
+  background-color: transparent;
+}
+
+#line, #lineb, .line-green {
+  width: 2px;
+  height: 112px;
+  margin: 4px 23px 5px 11px;
+  border-radius: 1px;
+  background-color: #b5b5b5;
+}
+
+.line-green {
+  height: 0;
+  background-color: #00c221;
+  transition: 300ms
+}
+
+#lineb {
+  height: 200px;
+}
+
+#cg-1 {
+  transition: 200ms;
+  transition-delay: 300ms;
+}
+
+#tit-2 {
+  transition: 200ms;
+  transition-delay: 300ms;
+}
+
+/* end green line */
+
+/* start FX */
+
+.message, .code {
+  transition: 300ms;
+}
+
+/* end FX */
